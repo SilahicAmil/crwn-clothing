@@ -1,14 +1,13 @@
-import { useContext } from "react";
-import { CartContext } from "../../contexts/cart.context";
-
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
-
 import {
-  ProductCardContainer,
-  ProductFooter,
   Name,
   Price,
+  ProductCardContainer,
+  ProductFooter,
 } from "./product-card.styles.jsx";
+
+import { CartContext } from "../../contexts/cart.context";
+import { useContext } from "react";
 
 export const ProductCard = ({ product }) => {
   const { name, price, imageUrl } = product;

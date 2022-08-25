@@ -1,19 +1,18 @@
 import { Fragment, useContext } from "react";
-import { Outlet, Link } from "react-router-dom";
-import { UserContext } from "../../../contexts/user.context";
-import { CartContext } from "../../../contexts/cart.context";
-import { signOutUser } from "../../../utils/firebase/firebase.utils";
-
-import CartIcon from "../../cart-icon/cart-icon.component";
-import CartDropdown from "../../cart-dropdown/cart-down.component";
-import { ReactComponent as CrwnLogo } from "../../../assets/crown.svg";
-
 import {
-  NavigationContainer,
   LogoContainer,
-  NavLinks,
   NavLink,
+  NavLinks,
+  NavigationContainer,
 } from "./navigation.styles";
+
+import { CartContext } from "../../../contexts/cart.context";
+import CartDropdown from "../../cart-dropdown/cart-down.component";
+import CartIcon from "../../cart-icon/cart-icon.component";
+import { ReactComponent as CrwnLogo } from "../../../assets/crown.svg";
+import { Outlet } from "react-router-dom";
+import { UserContext } from "../../../contexts/user.context";
+import { signOutUser } from "../../../utils/firebase/firebase.utils";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);

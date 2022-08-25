@@ -1,7 +1,7 @@
 import {
-  DirectoryItemContainer,
   BackgroundImage,
   DirectoryBody,
+  DirectoryItemContainer,
   DirectoryTitle,
   ShopNow,
 } from "./directory-item.styles.jsx";
